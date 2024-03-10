@@ -1,0 +1,519 @@
+.nav{
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    box-shadow: 0px 0px 18px grey;
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
+.logo{
+    float: left;
+    width: 60%;
+}
+.logo img{
+    
+    width: auto;
+    height: 130px;
+    
+}
+.nav_side{
+    float: right;
+    width: 40%;
+    margin-top: 30px;
+    
+}
+
+.nav_side a{
+    
+    text-decoration: none;
+    margin-right: 10px;
+    
+    color: black;
+    font-weight: bold;
+    font-family: cosmic,sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav_side a:hover{
+   color: orange;
+   text-decoration: underline;
+   transition: all 1s ease; 
+}
+@media screen and (max-width:375px){
+    .nav_side{
+        width: 100%;
+    }
+    .nav_side a{
+        font-size: 15px;
+    }
+    
+}
+.main{
+    background-image: url('image1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 1%;
+    height: 80vh;
+    opacity: 0.7;
+}
+.main .main_content{
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-bottom: 120px;
+    padding: 60px;
+    
+}
+
+.main .main_content h2{
+     font-family:  cosmic,sans-serif;
+    font-size:40px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+    color: black;
+    padding-top: 80px;
+}
+
+@media screen and (max-width:480px){
+    .main .main_content h2{
+        font-size: 20px;
+        padding-top: 100px;
+    }
+
+    
+}
+.main .main_content h2 span{
+    margin-top: 20px;
+    font-family:cosmic,sans-serif; 
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    color:orange;
+}
+.main .main_content .btn{
+    margin-top: 50px;
+}
+.main .main_content .btn a{
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    font-family:cosmic,sans-serif ;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+}
+.main .main_content .btn a:hover{
+    background-color:black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+}  
+/* @media screen and (max-width:375px){
+    .main{
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .main .main_content{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 40px;
+    }
+
+    
+} */
+
+
+.product{
+    padding-bottom: 50px;
+}
+.product h2{
+ color: black;
+ font-size:35px ;
+ text-align: center;
+ padding: 20px;
+ 
+}
+.product .product_container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.product .product_container .item{
+    width: 33.33%;
+    margin: 10px;
+    height: auto;
+}
+.product .product_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.product .product_container .item .item_img{
+width: 100%;
+height:250px;
+overflow: hidden;
+}
+.product .product_container .item .item_img img{
+ width: 100%;
+height:250px;
+}
+.product .product_container .item .item_content{
+  text-align: center;  
+}
+.product .product_container .item .item_content h3{
+   padding: 10px;
+   font-size: 25px;
+   font-family:cosmic,sans-serif ;
+}
+.product .product_container .item .item_content p{
+   padding: 10px;
+   font-size: 15px;
+   font-family:cosmic,sans-serif ;
+}
+.product .product_container .item .item_content a{
+    text-decoration: none;
+    /* margin: 50px; */
+    padding: 10px 20px;
+    background-color: blueviolet;
+    font-family:cosmic,sans-serif ;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+}
+/* @media screen and (max-width:480px){
+    .item_content a{
+        margin:0px;
+    }
+} */
+    
+
+.product .product_container .item .item_content a:hover{
+    background-color:black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+}  
+.product .product_button{
+    text-align: center;
+    margin: 50px;
+
+}
+.product .product_button a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    font-family:cosmic,sans-serif ;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+
+}
+.product .product_button a:hover{
+    background-color:black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+}
+.keypoint{
+    padding: 50px;
+}
+.keypoint h2{
+    color: black;
+    font-size:35px ;
+    text-align: center;
+    padding: 10px;   
+}
+.keypoint .key_container{
+    display: flex;
+}
+.keypoint .key_container .key_content{
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+.keypoint .key_container .key_content li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-left: 2px solid orange;
+    color: black;
+    text-align: left;
+    font-family: cosmic,sans-serif;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.keypoint .key_container .key_img{
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+}
+.keypoint .key_container .key_img img{
+    width: 100%;
+}
+.testi{
+    padding: 50px;
+
+}
+.testi h2{
+    color: black;
+    font-size:35px ;
+    text-align: center;
+    padding: 10px;  
+}
+.testi .testi_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+.testi .testi_container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+}
+.testi .testi_container .item{
+     width: 100%;
+     padding: 20px;
+     background-color: white;
+     box-shadow: none;
+}
+
+.testi .testi_container .item .item_image{
+    width: 100%;
+    height:100px;
+    overflow: hidden;
+    text-align: center;
+    }
+    .testi .testi_container .item .item_image img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    
+    }
+.testi .testi_container.item .item_content{
+        text-align: center;  
+      }
+.testi .testi_container .item .item_content h3{
+         padding: 10px;
+         font-size: 25px;
+         font-family:cosmic,sans-serif ;
+      }
+.testi .testi_container .item .item_content p{
+         padding: 10px;
+         font-size: 15px;
+         font-family:cosmic,sans-serif ;
+      }
+.team{
+    padding: 50px;
+
+}
+.team h2{
+    color: black;
+    font-size:35px ;
+    text-align: center;
+    padding: 10px;
+
+}
+.team .team_container{
+    display: flex;
+}
+@media screen and (max-width:480px){
+    .team .team_container{
+        display: flex;
+    flex-direction: column;
+    }
+    
+}
+.team .team_container .team_video{
+    width: 50%;
+    padding: 20px;
+}
+.team .team_container .team_video video{
+    width: 100%;
+    border: 5px solid orange;
+    outline: none;
+}
+.team .team_container .team_content{
+    width: 40%;
+    padding: 20px;
+    margin-left: 50px;
+
+}
+.team_content p{
+    padding: 10px;
+    font-size: 25px;
+    font-family:cosmic,sans-serif ;
+}
+.feed{
+    padding: 50px;
+    background-image: url('imagebackground.png');
+    background-size: cover;
+}
+.feed h2{
+    color: white;
+    font-size:35px ;
+    text-align: center;
+    padding: 10px;
+}
+.feed .feed_form{
+    text-align: center;
+    
+}
+.feed .feed_form form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.feed .feed_form form input{
+    width: 30%;
+   margin: 10px;
+   padding: 10px;
+   outline: none; 
+   border:none;
+}
+.feed .feed_form form textarea{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+
+    
+}
+ .feed_form form button{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    outline: none; 
+    border:none;
+    background-color: purple;
+    color: white;
+}
+.feed .feed_form form button:hover{
+    background-color:black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+}
+footer{
+    background-color:#c4c4c2 ;
+    padding: 50px;
+}
+.pages{
+    text-align: center;  
+}
+.pages h3{
+    color: black;
+    font-size: 20px;
+    font-family:cosmic,sans-serif  ;
+    padding: 5px;
+}
+.pages a{
+   text-decoration: none; 
+   font-size: 15px;
+   margin: 10px;
+   font-family: cosmic,sans-serif;
+   color: blueviolet;
+}
+.pages a:hover{
+  color: blue;
+  transition: 0.3s;
+}
+.doc{
+    text-align: center;  
+}
+.doc h3{
+    color: black;
+    font-size: 20px;
+    font-family:cosmic,sans-serif  ;
+    padding: 5px;
+}
+.doc a{
+   text-decoration: none; 
+   font-size: 15px;
+   margin: 10px;
+   font-family: cosmic,sans-serif;
+   color: blueviolet;
+}
+.doc a:hover{
+  color: blue;
+  transition: 0.3s;
+}
+.social{
+    text-align: center;  
+}
+.social h3{
+    color: black;
+    font-size: 20px;
+    font-family:cosmic,sans-serif  ;
+    padding: 5px;
+}
+.contacts{
+    text-align: center;  
+}
+.contacts h3{
+    color: black;
+    font-size: 20px;
+    font-family:cosmic,sans-serif  ;
+    padding: 5px;
+}
+footer .social a{
+    margin: 10px;
+    font-size: 20px;
+    color: darkblue;
+
+}
+footer .contacts a{
+    margin: 10px;
+    font-size: 20px;
+    color: darkblue;
+
+}
+section{
+    margin: 10%;
+}
+section .about h2{
+    color: orange;
+    font-size:35px ;
+    text-align: center;
+    padding: 10px;
+}
+
+section .mission h2{
+    color: orange;
+    font-size:35px ;
+    text-align: center;
+    padding: 10px;
+}
+.about p{
+    padding: 10px;
+    font-size: 15px;
+    font-family:cosmic,sans-serif ;
+    line-height: 20px;
+}
+.mission p{
+    padding: 10px;
+    font-size: 15px;
+    font-family:cosmic,sans-serif ;
+    line-height: 20px;
+}
